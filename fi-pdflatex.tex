@@ -11,7 +11,7 @@
            %% digital version of a document. Replace with `printed`
            %% to enable the default options for the printed version
            %% of a document.
-  twoside, %% This option enables double-sided typesetting. Use at
+  oneside, %% This option enables double-sided typesetting. Use at
            %% least 120 g/m² paper to prevent show-through. Replace
            %% with `oneside` to use one-sided typesetting; use only
            %% if you don’t have access to a double-sided printer,
@@ -52,16 +52,14 @@
     university    = mu,
     faculty       = fi,
     type          = bc,
-    author        = Jane Doe,
-    gender        = f,
-    advisor       = John Smith,
-    title         = {The Proof of P = NP},
-    TeXtitle      = {The Proof of $\mathsf{P}=\mathsf{NP}$},
-    keywords      = {keyword1, keyword2, ...},
-    TeXkeywords   = {keyword1, keyword2, \ldots},
-    abstract      = {This is the abstract of my thesis, which can
-
-                     span multiple paragraphs.},
+    author        = Marek Mravík,
+    gender        = m,
+    advisor       = Mgr. Lukáš Němec,
+    title         = {Virtual assistant},
+    TeXtitle      = {Virtual assistant},
+    keywords      = {virtual, assistant, AI, speech recognition, text                 to speech, machine learning, deep learning, Amazon, Alexa, Google, Apple, Siri},
+    TeXkeywords   = {virtual, assistant, AI, speech recognition, text                 to speech, machine learning, deep learning, Amazon, Alexa, Google, Apple, Siri},
+    abstract      = {This thesis is focused on virtual assistants, their history, availability and comparison. For purpose of this thesis I have selected Amazon Alexa, Google Assistant and Apple Siri. Security, speech-to-text understanding and functionality of these assistants will be analyzed and tested. Second part of the thesis defines how a virtual assistant should work, behave and be designed at my opinion and a really simple basic assistant with few functions is implemented.},
     thanks        = {These are the acknowledgements for my thesis, which can
 
                      span multiple paragraphs.},
@@ -87,37 +85,61 @@
   commentstyle    = \itshape\color{magenta}}
 \usepackage{floatrow} %% Putting captions above tables
 \floatsetup[table]{capposition=top}
+
+
+
+
 \begin{document}
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
+In the current era, people are stressed out from their fast-living stereotypical lives. People these days do not have enough time for themselves, having too many responsibilities at work, spending a lot of time in transports, shopping... The goal of this era is to make everything more efficient, simpler, faster, etc. One might think that people just got lazy over time, but why would we do something if we can make something do it for us. Thanks to this, and IT progress, we have so many virtual assistants implementations available. Someone not interested in this topic might have never heard about this so-called virtual assistant. So let's define what it is first. A virtual assistant can also be called digital or AI assistant, is a piece of software, an application program, that can talk to the user, understand what he says in natural language. Yes, the principle is basically talking to a computer or whatever device an assistant is running on. The user can command its assistant, and the assistant completes tasks for its user. Simple right? So what can a virtual assistant do for a user? Nowadays pretty much everything. Starting in the morning, wishing the user to have a beautiful day, giving him the newest info right away, informing him about the weather, whatever user prefers. It can also keep an eye on the users shopping list, to-do list, notes, giving user everything he wants to know about users stuff anytime he asks, adding items just by saying it. The assistant can keep the collection of users favorite music, artists, play what user says on demand (this feature might need other hardware). Virtual assistants are taking workload from secretaries, or personal assistants as well since they can read users new emails to the user, notify the user about anything that happened while the user was not available, create and send new emails just by dictating them.
 
-Theses are rumoured to be the capstones of education, so I decided
-to write one of my own. If all goes well, I will soon have a
-diploma under my belt. Wish me luck!
+How do virtual assistants work and how are they able to do such things? How do virtual assistants even work? Simply said, virtual assistants are recording anything user says, transforming it to something they can work with, analyzing users request, preparing the answer or action, applying the operation or giving the user what he asked for, and if needed, telling the user that the work has been done. Most of the virtual assistants are cloud-based, which means that they perform just about everything on remote high power servers. The essential functions that are necessary for the process are speech-to-text and text-to-speech transformations, and a lot of AI platforms based on machine learning, deep learning, neural networks which are somewhat like a brain for these assistants. This brain or brains are developed every day, with every interaction with a user, with lots of sophisticated, specialized algorithms to learn from their mistakes and to make better predictions and understanding of users demands.
 
-\begin{otherlanguage}{czech}
-Říká se, že závěrečné práce jsou vyvrcholením studia a tak jsem se
-rozhodl jednu také napsat. Pokud vše půjde podle plánu, odnesu si
-na konci semestru diplom. Držte mi palce!
-\end{otherlanguage}
+\chapter{History}
+The concept of virtual assistants is not as young as many people think. It has started developing in early 1960. The first to introduce very basic voice assistant was the Big Blue company, also known as IBM. IBM's \texttt{Shoebox} device set the start of this long-time developing competitions between giant IT companies. At that time Shoebox device was able to understand 16 words and 10 digits. Shoebox was operated by speaking into a microphone, which converted voice sounds into electrical impulses and instructed an adding machine to calculate and print answers to simple arithmetic problems \parencite{shoebox}.
 
-\begin{otherlanguage}{slovak}
-Hovorí sa, že záverečné práce sú vyvrcholením štúdia a tak som sa
-rozhodol jednu tiež napísať. Ak všetko pôjde podľa plánu, odnesiem
-si na konci semestra diplom. Držte mi palce!
-\end{otherlanguage}
+Another breaking point in history of virtual assistant, or at that time just speech recognition softwares, was when Dragon launched the first speech recognition software, that was available for consumers for just a few thousands of dollars.
 
-\begin{otherlanguage}{german}
-Man munkelt, dass die Dissertation die Krönung der Ausbildung ist.
-Deshalb habe ich mich beschlossen meine eigene zu schreiben. Wenn
-alles gut geht, bekomme ich bald ein Diplom. Wünsch mir Glück!
-\end{otherlanguage}
+Next milestone was set by Microsoft, when it introduced \texttt{Clippy}. Clippy was an intelligent user assistant implemented as a feature to Microsoft Office. Clippy had a form of a cartoon clip character, which offered users way too much help than was needed. When Clippy first came out there was no option to turn it off, and it was more of a problem than a help. Even after the feature was able to turn off, it didn't live up to its purpose and disappeared in 2001 \parencite{clippy}.
 
-\begin{otherlanguage}{russian}\textrussian{%
-Говорят, что тезис -- это кульминация обучения. Поэтому я и решил
-написать собственный тезис. Если всё сработает по плану, я скоро
-получу диплом. Желайте мне удачи!
-}\end{otherlanguage}
+Near the end of 00's decade, and start of the next one, new virtual assistant in the shape as we know them today were introduced. Apple introduced its Speech Interpretation and Recognition Interface known as \texttt{Siri}. Followed by Google introducing \texttt{Google Now}, Microsoft with its \texttt{Cortana} and Amazon introducing \texttt{Alexa} and \texttt{Amazon Echo} just for users with Prime subscription.
+
+These virtual assistants were not as we known them when they have got introduced, but they got to their actual shape by never ending evolution. This started what looks to be the biggest competition of todays largest companies to have the best, most accurate and powerful AI assistant in the world.
+
+\chapter{Available virtual assistants}
+As I already mentioned, there are few assistants that most people already heard of. Those are Apple Siri, Google Assistant, Amazon Alexa, Microsoft Cortana. We will talk about the first three of these more later.
+
+Market of virtual assistants is really big, we can see small companies or even groups of people trying to compete with the giants as Amazon or Apple. Many of AI assistant implementations are expensive and we have to pay for them. There are some open-source free implementations for anyone. 
+
+One of open-source voice assistants is \texttt{Mycroft}. Mycroft can run pretty much anywhere the user wants, on a desktop computer, in your car, or even on Raspberry Pi. Since it is an open-source software, the user, if he knows how, can extend its features and improve it\parencite{mycroft}.
+
+Another example of free virtual assistant is \texttt{Braina}. Brain is an intelligent personal assistant for Windows PC. Braina also support multiple languages and has a special application for Android or iOS. With this mobile application you can interact with your computer you have Braina installed on anywhere in your house\parencite{braina}.
+
+There is a lot of other companies working on their own virtual assistants like Samsung Electronics, Blackberry Limited or even Facebook has their virtual assistant called M.
+
+Virtual assistants are there, around all of us, waiting to get noticed, tried out and becoming a part of our lives. If this thesis gets you on board and you will be interested in getting one of your own virtual assistants just go and look for one suited for you.
+
+
+\chapter{Amazon Alexa}
+\section{About}
+\section{Security}
+\section{Tests}
+\section{Evaluation}
+
+\chapter{Google Assistant}
+\section{About}
+\section{Security}
+\section{Tests}
+\section{Evaluation}
+
+\chapter{Apple Siri}
+\section{About}
+\section{Security}
+\section{Tests}
+\section{Evaluation}
+
+\chapter{Comparison}
 
 \chapter{These are}
 \section{the available}
@@ -652,6 +674,7 @@ the index will be ill-sorted.
   \printindex
 
 \appendix %% Start the appendices.
+
 \chapter{An appendix}
 Here you can insert the appendices of your thesis.
 
